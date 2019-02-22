@@ -1,0 +1,54 @@
+$type: card
+properties:
+  view1:
+    type: element
+    title: View
+    xtype: at-core-view
+    view: |-
+      <div class="action">
+        <div class="layout-horizontal mx pbsm ptsm" href="{{ resourceReference.webUrl }}" at-click-action="select" style="cursor:pointer;">
+          <div class="layout-flex text-primary">
+        		<div class="clamp">
+      				<span class="font-bold">{{ resourceVisualization.title }}</span>
+        			<span class="text-secondary"> {{ resourceVisualization.type }}</span>
+      			</div>
+      			<div class="grey font-caption" style="margin-top: 2px; margin-bottom: 2px;">
+      				{{ resourceVisualization.previewText }}
+      			</div>
+      		</div>
+        </div>
+      </div>
+
+      <style>
+      .action:hover {
+        background-color: #F5f5f5;
+      }
+
+      .clamp {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .preview {
+        width: 48px;
+        height: 48px;
+      }
+      </style>
+$meta:
+  cardId: 
+  preview-mode: static
+  preview-container: item
+  search-term: 
+  service-url: 
+  preview-data: |-
+    {
+      "title": "abc"
+    }
+  xclass: 
+  xstyle: 
+  code: |-
+    action.initialize = function(evt) {
+      //debugger;
+    }
+rules: []

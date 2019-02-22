@@ -1,0 +1,70 @@
+contentType: Card
+UserActions:
+  cardId: !!int 8
+  hasNotifications: !!bool false
+  isIsoloated: !!bool false
+  maxItems: !!int 3
+  pinnable: !!bool true
+title: Trending
+name: graph-trending
+CollectionModeField: null
+MaxItemsField: null
+PriorityField: null
+StreamSource: null
+CardComponent: graph-trending/graph-trending-card
+StoreMetadataField: null
+CommonPart:
+  Owner: !!int 2
+  Container: null
+  CreatedUtc: 2019-02-22T10:32:00.9266777Z
+  PublishedUtc: 2019-02-22T10:32:00.9706783Z
+  ModifiedUtc: 2019-02-22T10:32:00.9266777Z
+  VersionCreatedUtc: 2019-02-22T10:32:00.9266777Z
+  VersionPublishedUtc: 2019-02-22T10:32:00.9706783Z
+  VersionModifiedUtc: 2019-02-22T10:32:00.9266777Z
+ServicePart:
+  ConnectorTypeName: ScriptConnector
+  ConnectorTypeId: !!int 5
+  ConnectorName: ms-graph
+  ServiceName: listTrending
+  Url: ~/api/adenin.GateKeeper.Connector/ms-graph/listTrending
+  ServiceParameters: '{}'
+SearchContextPart:
+  Query: null
+  Interface: null
+CommandPart:
+  CommandType: None
+  Command: 
+  DefaultDate: null
+  Intent: null
+  Ext: {}
+AppPart:
+  App: null
+  Url: 
+  ExtUrl: 
+  Priority: !!int 0
+  AppFaceId: !!int 0
+  Category: orange
+  Icon: now:search
+  CSSClasses: null
+  Enabled: !!bool false
+  NewWindow: !!bool false
+  UrlWithId: !!bool true
+  AvailableAppFaceRecords: null
+  HasPattern: !!bool false
+RoleViewPermissionsPart:
+  AllowedRoles: []
+  Audiences: []
+  Mandatory: False
+RecurringTaskPart:
+  Schedule: '- - - - -'
+  ActivityType: adenin.Now.Activities.CardTask.UpdateCard
+  StartDateUtc: null
+  EndDateUtc: null
+  NextOccurrenceUtc: null
+  Priority: !!int 5
+  Status: Enabled
+  NowFlag: 0
+  LastExecutionUTC: null
+  EnableWebHook: !!bool false
+  WebHookToken: null

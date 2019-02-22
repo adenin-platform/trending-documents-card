@@ -1,0 +1,40 @@
+$type: card
+rules: []
+properties:
+  title:
+    type: element
+    xtype: at-carbon-card-title
+    title: Basic Card Sample
+    xgridcols: 12
+    xstyle: 
+    xclass: 
+    actionListeners:
+      - _start
+  vlist3:
+    type: element
+    xtype: at-core-vlist
+    itemComponent: trending-documents-card/trending-documents-card-item-card
+    listHeight: 300px
+    listHeightExpanded: 500px
+$meta:
+  cardId: !!int 8
+  preview-data: |-
+    {  
+      "url": "http://www.nowassistant.com",
+      "title": "Home"
+    }
+  preview-mode: static
+  preview-container: event
+  search-term: 
+  service-url: 
+  xclass: 
+  xstyle: 
+  code: |-
+    action.initialize = function(evt) {
+      //debugger;
+    }
+
+    action.select = function(evt) {
+      var win = window.open(evt.args.href, '_blank');
+      win.focus();
+    }
